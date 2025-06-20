@@ -19,6 +19,5 @@ ENV MODEL_PATH=""
 
 EXPOSE 8080
 
-# fastapi run app/main.py --port 8080
-#CMD ['fastapi', 'run', 'app/main.py', '--port', '8080']
+# Start the application using uvicorn
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
